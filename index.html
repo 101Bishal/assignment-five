@@ -1,19 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ticket for Bus</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/a2cf1a82ca.js" crossorigin="anonymous"></script>
+<style>
+    .font-manrope{
+        font-family: "Manrope", sans-serif;
+    }
+</style>
+<link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="font-manrope">
     <header>
-
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                  <li><a>Item 3</a></li>
+                  
+                </ul>
+              </div>
+              <a class="btn btn-ghost text-2xl">P-Ticket<a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a>Item 3</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end">
+              <a class="btn w-32 h-12 text-2xl text-[#1DD100] bg-[#a7d1a1]">Bus <img src="images/bus-icon.png" alt=""></a>
+            </div>
+          </div>
     </header>
     <main>
-
+      <!--banner section-->
+      <div class=" items-center h-[550px] w-[1171px] mt-15" style="background-image: url(images/banner.png);">       
+        <div class="hero-content text-center text-neutral-content justify-center">
+          <div class="max-w-md justify-center text-center">
+            <h1 class="mb-5 text-5xl font-bold">End-to-End Travel with <br> <span class="text-[#1DD100]">P Paribahan</span> </h1>
+            <p class="mb-5">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+            <button class="btn btn-primary bg-[#1DD100]">Buy Tickets</button>
+          </div>
+        </div>
+      </div>
+      <!--coupon section-->
+      <h1 class="text-3xl text-center mt-4">Best offers for you</h1>
+      <div class="items-center">
+        <div class="flex gap-5 pt-5">
+          <div class="card w-96 bg-[#FFBF0F] text-primary-content">
+            <div class="flex items-center">
+              <div class="card-body">
+                <h2 class="card-title text-5xl text-bold">15%  OFF</h2>
+                <p>On your next purchase</p>
+                <p>use by January 2024</p>
+              </div>
+              <div>
+                <h1>NEW 15</h1>
+                <h3>Coupon Code</h3>
+              </div>
+            </div>
+          </div>
+          <div class="card w-96 bg-[#F78C9C] text-primary-content">
+            <div class="flex items-center">
+              <div class="card-body">
+                <h2 class="card-title text-5xl text-bold">20%  OFF</h2>
+                <p>On your next purchase</p>
+                <p>use by January 2024</p>
+              </div>
+              <div>
+                <h1>NEW 15</h1>
+                <h3>Coupon Code</h3>
+  
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="btn btn-primary items-center justify-center">See all offers</button>
     </main>
     <footer>
-        
+
     </footer>
 </body>
 </html>
